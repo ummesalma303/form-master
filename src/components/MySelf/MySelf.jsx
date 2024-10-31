@@ -1,5 +1,6 @@
 import Brother from '../Brother/Brother';
 import Sister from '../Sister/Sister';
+import PropTypes from 'prop-types';
 
 const MySelf = ({ring}) => {
     return (
@@ -10,4 +11,7 @@ const MySelf = ({ring}) => {
     );
 };
 
+MySelf.propTypes = {
+    ring:PropTypes.string.isRequired
+};
 export default MySelf;
